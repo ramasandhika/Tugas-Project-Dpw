@@ -17,6 +17,49 @@
 			<li><a href="project2.html">Project 2</a></li>
 		</ul>
 	</div>
+	<div>
+		<form action="#" name="form" method="GET">
+			<fieldset class="space">
+				<h2>Convert Nominal Mata Uang</h2>
+				<hr>
+				<table class="tab">
+					<tr>
+						<td colspan="2">Masukkan Nominal</td>
+						<td>:</td>
+						<td><input type="number" name="nominal" id="Nominal2" style="width: 230px; height: 20px;"></td>
+					</tr>
+					<tr>
+						<td colspan="2">Pilih Mata Uang</td>
+						<td>:</td>
+						<td><select id="Dom" style="width: 235px; height: 25px;">
+							<option value="IDR">IDR</option>
+							<option value="USD">USD</option>
+							<option value="EUR">EUR</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td colspan="2">Pilih Mata Uang Tujuan</td>
+						<td>:</td>
+						<td><select id="Sub" style="width: 235px; height: 25px;">
+							<option value="IDR2">IDR</option>
+							<option value="USD2">USD</option>
+							<option value="EUR2">EUR</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><button type="button"  onclick="klik2()" class="but">Convert</button></td> 
+						<td><button type="reset" class="but">Reset</button></td>
+					</tr>
+				
+					<tr>
+						<td colspan="2">Output</td>
+						<td>:</td>
+						<td><textarea name="Result2" id="Result2" cols="30" rows="3"></textarea></td>
+					</tr>
+			</table></fieldset>
+		</form>
+		
+	</div>
 
 </body>
 </html>
