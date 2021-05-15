@@ -63,3 +63,42 @@ fieldset {
 legend {
     font-size: 25px;
 }
+
+.footer {
+    background-color:#FFEFD5;
+    margin-top: 70px;
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+}
+.but{
+    background: #FFEFD5;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:5px;
+    padding-top:5px;
+    color: black;
+    font-family: comic sans ms;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    border-color: #FFEFD5;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+}
+.but:hover{
+    background-color: #F5DEB3;
+    color: blue;
+}
+
+.tab {
+    font-size: 20px;
+    margin-left: 1px;
+}
