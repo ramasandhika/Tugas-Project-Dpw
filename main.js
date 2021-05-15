@@ -29,3 +29,15 @@ function pembilang(Num){
     }
     return hasil
 }
+
+
+function klik(){
+    var kurs = document.getElementById("Kurs").value ;
+    var user = document.getElementById("Nominal").value ;
+    var temp = pembilang(user) ;
+    if(user == 0){
+        document.getElementById("Result").innerHTML = 0 + kurs
+    } else {
+        document.getElementById("Result").innerHTML = temp + kurs
+    }
+}
