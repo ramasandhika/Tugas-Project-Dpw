@@ -30,6 +30,45 @@ function pembilang(Num){
     return hasil
 }
 
+function convert(Dom,Sub,Mny){
+    var Money = parseInt(Mny)
+    temp = 0
+    if(Dom == "IDR"){
+        if(Dom == "IDR", Sub == "IDR2"){
+            op = Money * 1
+            temp = op
+        } else if(Dom == "IDR",Sub == "USD2"){
+            op = Money * 0.00007
+            temp = op
+        } else if(Dom == "IDR",Sub == "EUR2"){
+            op = Money * 0.000058
+            temp = op
+        } 
+    } else if (Dom == "USD"){
+        if(Dom == "USD",Sub == "USD2"){
+            op = Money * 1
+            temp = op
+        } else if(Dom == "USD",Sub == "IDR2"){
+            op = Money * 14284.10
+            temp = op
+        } else if(Dom == "USD",Sub == "EUR2"){
+            op = Money * 0.82
+            temp = op
+        }
+    } else if (Dom == "EUR"){
+        if(Dom == "EUR",Sub == "EUR2"){
+            op = Money * 1
+            temp = op
+        } else if(Dom == "EUR",Sub == "IDR2"){
+            op = Money * 17345.28
+            temp = op
+        } else if(Dom == "EUR",Sub == "USD2"){
+            op = Money * 1.21
+            temp = op
+        }
+    }
+    return temp
+}
 
 function klik(){
     var kurs = document.getElementById("Kurs").value ;
@@ -41,3 +80,4 @@ function klik(){
         document.getElementById("Result").innerHTML = temp + kurs
     }
 }
+
