@@ -81,3 +81,10 @@ function klik(){
     }
 }
 
+function klik2(){
+    var mny = document.getElementById("Nominal2").value
+    var dom = document.getElementById("Dom").value
+    var sub = document.getElementById("Sub").value
+    var hasil = convert(dom,sub,mny)
+    document.getElementById("Result2").innerHTML = hasil
+}
